@@ -1,0 +1,26 @@
+[
+  {
+    "name": "lucide",
+    "version": "0.468.0",
+    "license": "ISC",
+    "source": "https://registry.npmjs.org/lucide/-/lucide-0.468.0.tgz"
+  },
+  {
+    "name": "motion",
+    "version": "12.23.24",
+    "license": "MIT",
+    "source": "https://registry.npmjs.org/motion/-/motion-12.23.24.tgz"
+  },
+  {
+    "name": "@fontsource-variable/dm-sans",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "source": "https://registry.npmjs.org/@fontsource-variable/dm-sans/-/dm-sans-5.3.0.tgz"
+  },
+  {
+    "name": "@fontsource-variable/source-serif-4",
+    "version": "5.3.1",
+    "license": "OFL-1.1",
+    "source": "https://registry.npmjs.org/@fontsource-variable/source-serif-4/-/source-serif-4-5.3.1.tgz"
+  }
+]

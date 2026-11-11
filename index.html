@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9f5">
+  <title>Weihan Wang · Multimodal Intelligence</title>
+  <meta name="description" content="Weihan Wang. Research in native multimodal models, fine-grained perception and understanding, and agents that interact with the real world.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor/lucide.min.js"></script>
+  <script defer src="vendor/motion.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#top" aria-current="location">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section id="top" class="wrap hero" aria-labelledby="name">
+    <div class="hero__text">
+      <h1 id="name">Weihan Wang</h1>
+      <div class="hero__bio">
+        <p>I lead multimodal pretraining at Z.ai, building the visual foundation of the GLM model family. I trained as a researcher in the Knowledge Engineering Group (KEG) at Tsinghua University.</p>
+        <p>My current research focuses on <span class="emphasis">native multimodal models</span>, <span class="emphasis">fine-grained perception and understanding</span>, and <span class="emphasis">agents that interact with the real world</span>.</p>
+      </div>
+      <ul class="social-links" aria-label="Contact and profiles">
+        <li><a class="contact-primary" href="mailto:weihan.wang@aminer.cn"><i data-lucide="mail" aria-hidden="true"></i>Email me</a></li>
+        <li><a href="https://scholar.google.com/citations?user=UaxGkIwAAAAJ"><i data-lucide="graduation-cap" aria-hidden="true"></i>Google Scholar<i class="outbound" data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/mactavish91"><i data-lucide="github" aria-hidden="true"></i>GitHub<i class="outbound" data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <figure class="portrait">
+      <a class="portrait__frame portrait__open" id="portrait-frame" href="assets/portrait.jpg" aria-label="Enlarge photo of Weihan Wang">
+        <picture id="portrait-picture">
+          <source srcset="assets/portrait.webp" type="image/webp">
+          <img src="assets/portrait.jpg" alt="Weihan Wang beneath tall palm trees, with blue sky, a beach and a lawn in view." width="1124" height="2000" fetchpriority="high">
+        </picture>
+      </a>
+    </figure>
+  </section>
+
+  <section id="news" class="wrap section-grid" aria-labelledby="news-title">
+    <div class="section-heading"><p class="section-index">01 / UPDATES</p><h2 id="news-title">Latest news<span>.</span></h2></div>
+    <div class="section-body">
+      <ul class="news">
+          <li><time datetime="2026-09">Sep 2026</time><p><a href="https://github.com/zai-org/GLM-OCR">GLM-OCR</a> passed 30 million downloads.</p></li>
+          <li><time datetime="2026-08">Aug 2026</time><p>We released <a href="https://huggingface.co/zai-org/GLM-5.3-Flash">GLM-5.3-Flash</a>, a SOTA native multimodal flash model.</p></li>
+          <li><time datetime="2026-07">Jul 2026</time><p><a href="https://aclanthology.org/2026.acl-long.1722/">Glyph</a> was selected as an ACL 2026 highlight.</p></li>
+          <li><time datetime="2026-04">Apr 2026</time><p>We released <a href="https://arxiv.org/abs/2604.26752">GLM-5V-Turbo</a>, a native multimodal agent model.</p></li>
+          <li><time datetime="2025-12">Dec 2025</time><p><a href="https://www.paperdigest.org/2026/03/most-influential-iclr-papers-2026-03-version/">CogVideoX</a> ranked #2 on Paper Digest's ICLR 2025 list.</p></li>
+          <li><time datetime="2024-12">Dec 2024</time><p><a href="https://www.paperdigest.org/2026/03/most-influential-nips-papers-2026-03-version/">CogVLM</a> ranked #7 on Paper Digest's NeurIPS 2024 list.</p></li>
+          <li><time datetime="2024-06">Jun 2024</time><p>We released <a href="https://github.com/zai-org/LVBench">LVBench</a>, the first extreme long video benchmark.</p></li>
+          <li><time datetime="2023-12">Dec 2023</time><p>We released <a href="https://github.com/THUDM/CogAgent">CogAgent</a>, the first VLM built for GUI agents.</p></li>
+          <li><time datetime="2023-10">Oct 2023</time><p>We released <a href="https://github.com/zai-org/CogVLM">CogVLM</a>, an open VLM approaching GPT-4V.</p></li>
+          <li><time datetime="2023-05">May 2023</time><p>We released <a href="https://github.com/THUDM/VisualGLM-6B">VisualGLM-6B</a>, China's first open multimodal chat model.</p></li>
+        </ul>
+      <button class="news-toggle text-button js-only" type="button" aria-expanded="false" aria-controls="news-archive"><span>View all updates</span><i data-lucide="arrow-down" aria-hidden="true"></i></button>
+    </div>
+  </section>
+
+  <section id="publications" class="wrap section-grid" aria-labelledby="pubs-title">
+    <div class="section-heading"><p class="section-index">02 / RESEARCH</p><h2 id="pubs-title">Publications<span>.</span></h2></div>
+    <div class="section-body">
+      <div class="research-toolbar js-only">
+        <div class="seg" role="group" aria-label="Filter publications">
+          <button type="button" data-filter="selected" aria-pressed="true">Selected <span class="filter-count"></span></button>
+          <button type="button" data-filter="all" aria-pressed="false">All <span class="filter-count"></span></button>
+        </div>
+        <label class="search-box"><i data-lucide="search" aria-hidden="true"></i><span class="sr-only">Search publications by title or author</span><input type="search" id="pub-search" placeholder="Search papers…" autocomplete="off"></label>
+      </div>
+      <p id="result-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div id="empty-state" class="empty-state" hidden><i data-lucide="search" aria-hidden="true"></i><p>No publications found.</p><button id="reset-search" type="button" class="text-button">Clear search and show all papers</button></div>
+      <div class="publication-years">
+        <div class="year">
+          <h3>2026</h3>
+          <ol class="pub-list">
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://arxiv.org/abs/2604.26752">GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents</a>
+              <p class="pub__desc">Native multimodal foundation model for agents that see, plan, code and act.</p>
+              <p class="pub__authors"><span class="pub__team">GLM-V Team</span></p>
+              <div class="pub__meta"><span class="pub__venue">arXiv 2026</span><a href="https://arxiv.org/abs/2604.26752">Paper</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-1">BibTeX</button></div>
+              <div class="bib" id="bib-1" hidden><pre>@article{glmv2026glm5vturbo,
+  title   = {GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents},
+  author  = {{GLM-V Team}},
+  journal = {arXiv preprint arXiv:2604.26752},
+  year    = {2026}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://arxiv.org/abs/2603.10910">GLM-OCR Technical Report</a>
+              <p class="pub__desc">Compact 0.9B model for real-world document OCR, with over 30 million downloads.</p>
+              <p class="pub__authors">Shuaiqi Duan*, Yadong Xue*, <strong>Weihan Wang</strong>*, Zhe Su, Huan Liu, Sheng Yang, Guobing Gan, …, Wenmeng Yu, Xiaotao Gu, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">arXiv 2026</span><a href="https://arxiv.org/abs/2603.10910">Paper</a><a href="https://github.com/zai-org/GLM-OCR">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-2">BibTeX</button></div>
+              <div class="bib" id="bib-2" hidden><pre>@misc{duan2026glmocrtechnicalreport,
+  title         = {GLM-OCR Technical Report},
+  author        = {Shuaiqi Duan and Yadong Xue and Weihan Wang and Zhe Su and Huan Liu and Sheng Yang and Guobing Gan and Guo Wang and Zihan Wang and Shengdong Yan and Dexin Jin and Yuxuan Zhang and Guohong Wen and Yanfeng Wang and Yutao Zhang and Xiaohan Zhang and Wenyi Hong and Yukuo Cen and Da Yin and Bin Chen and Wenmeng Yu and Xiaotao Gu and Jie Tang},
+  year          = {2026},
+  eprint        = {2603.10910},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub">
+              <a class="pub__title" href="https://arxiv.org/abs/2511.08195">UI2Code<sup>N</sup>: UI-to-Code Generation as Interactive Visual Optimization</a>
+              <p class="pub__authors">Zhen Yang*, Wenyi Hong*, Mingde Xu, Xinyue Fan, <strong>Weihan Wang</strong>, Jiale Cheng, Xiaotao Gu, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">ICML 2026</span><a href="https://arxiv.org/abs/2511.08195">Paper</a><a href="https://github.com/zai-org/UI2Code_N">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-3">BibTeX</button></div>
+              <div class="bib" id="bib-3" hidden><pre>@inproceedings{yang2026ui2coden,
+  title     = {{UI2Code$^\text{N}$}: UI-to-Code Generation as Interactive Visual Optimization},
+  author    = {Yang, Zhen and Hong, Wenyi and Xu, Mingde and Fan, Xinyue and Wang, Weihan and Cheng, Jiale and Gu, Xiaotao and Tang, Jie},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  series    = {PMLR},
+  volume    = {306},
+  year      = {2026}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://aclanthology.org/2026.acl-long.1722/">Glyph: Scaling Context Windows via Visual-Text Compression</a>
+              <p class="pub__desc">Scales context windows by rendering long text as images for a VLM to read.</p>
+              <p class="pub__authors">Jiale Cheng, Yusen Liu, Xinyu Zhang, Yulin Fei, Wenyi Hong, Ruiliang Lyu, <strong>Weihan Wang</strong>, Zhe Su, Xiaotao Gu, Xiao Liu, Yushi Bai, Jie Tang, Hongning Wang, Minlie Huang</p>
+              <div class="pub__meta"><span class="pub__venue">ACL 2026</span><span class="badge">Highlight</span><a href="https://aclanthology.org/2026.acl-long.1722/">Paper</a><a href="https://github.com/thu-coai/Glyph">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-4">BibTeX</button></div>
+              <div class="bib" id="bib-4" hidden><pre>@inproceedings{cheng-etal-2026-glyph,
+  title     = {Glyph: Scaling Context Windows via Visual-Text Compression},
+  author    = {Cheng, Jiale and Liu, Yusen and Zhang, Xinyu and Fei, Yulin and Hong, Wenyi and Lyu, Ruiliang and Wang, Weihan and Su, Zhe and Gu, Xiaotao and Liu, Xiao and Bai, Yushi and Tang, Jie and Wang, Hongning and Huang, Minlie},
+  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  year      = {2026},
+  doi       = {10.18653/v1/2026.acl-long.1722}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- ===== 2025 ===== -->
+        <div class="year">
+          <h3>2025</h3>
+          <ol class="pub-list">
+            <li class="pub">
+              <a class="pub__title" href="https://arxiv.org/abs/2507.01006">GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning</a>
+              <p class="pub__authors"><span class="pub__team">GLM-V Team</span></p>
+              <div class="pub__meta"><span class="pub__venue">arXiv 2025</span><a href="https://arxiv.org/abs/2507.01006">Paper</a><a href="https://github.com/zai-org/GLM-V">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-5">BibTeX</button></div>
+              <div class="bib" id="bib-5" hidden><pre>@misc{vteam2025glm45vglm41vthinkingversatilemultimodal,
+  title         = {GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning},
+  author        = {{V Team}},
+  year          = {2025},
+  eprint        = {2507.01006},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://arxiv.org/abs/2508.06471">GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models</a>
+              <p class="pub__desc">Open foundation model that unifies agentic, reasoning and coding abilities.</p>
+              <p class="pub__authors"><span class="pub__team">GLM Team</span></p>
+              <div class="pub__meta"><span class="pub__venue">arXiv 2025</span><a href="https://arxiv.org/abs/2508.06471">Paper</a><a href="https://github.com/zai-org/GLM-4.5">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-6">BibTeX</button></div>
+              <div class="bib" id="bib-6" hidden><pre>@misc{glm2025glm45,
+  title         = {GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models},
+  author        = {{GLM-4.5 Team}},
+  year          = {2025},
+  eprint        = {2508.06471},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_LVBench_An_Extreme_Long_Video_Understanding_Benchmark_ICCV_2025_paper.html">LVBench: An Extreme Long Video Understanding Benchmark</a>
+              <p class="pub__desc">The first benchmark for extreme long video understanding, up to two hours.</p>
+              <p class="pub__authors"><strong>Weihan Wang</strong>, Zehai He, Wenyi Hong, Yean Cheng, Xiaohan Zhang, Ji Qi, Ming Ding, Xiaotao Gu, Shiyu Huang, Bin Xu, Yuxiao Dong, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">ICCV 2025</span><span class="badge">Highlight</span><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_LVBench_An_Extreme_Long_Video_Understanding_Benchmark_ICCV_2025_paper.html">Paper</a><a href="https://github.com/zai-org/LVBench">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-7">BibTeX</button></div>
+              <div class="bib" id="bib-7" hidden><pre>@inproceedings{wang2025lvbench,
+  title     = {LVBench: An Extreme Long Video Understanding Benchmark},
+  author    = {Wang, Weihan and He, Zehai and Hong, Wenyi and Cheng, Yean and Zhang, Xiaohan and Qi, Ji and Ding, Ming and Gu, Xiaotao and Huang, Shiyu and Xu, Bin and Dong, Yuxiao and Tang, Jie},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages     = {22958--22967},
+  year      = {2025}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub">
+              <a class="pub__title" href="https://openaccess.thecvf.com/content/CVPR2025/html/Hong_MotionBench_Benchmarking_and_Improving_Fine-grained_Video_Motion_Understanding_for_Vision_CVPR_2025_paper.html">MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models</a>
+              <p class="pub__authors">Wenyi Hong*, Yean Cheng*, Zhuoyi Yang*, <strong>Weihan Wang</strong>, Lefan Wang, Xiaotao Gu, Shiyu Huang, Yuxiao Dong, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">CVPR 2025</span><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Hong_MotionBench_Benchmarking_and_Improving_Fine-grained_Video_Motion_Understanding_for_Vision_CVPR_2025_paper.html">Paper</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-8">BibTeX</button></div>
+              <div class="bib" id="bib-8" hidden><pre>@inproceedings{hong2025motionbench,
+  title     = {MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models},
+  author    = {Hong, Wenyi and Cheng, Yean and Yang, Zhuoyi and Wang, Weihan and Wang, Lefan and Gu, Xiaotao and Huang, Shiyu and Dong, Yuxiao and Tang, Jie},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2025}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub">
+              <a class="pub__title" href="https://arxiv.org/abs/2408.06072">CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer</a>
+              <p class="pub__authors">Zhuoyi Yang, Jiayan Teng, Wendi Zheng, Ming Ding, Shiyu Huang, Jiazheng Xu, …, <strong>Weihan Wang</strong>, Yean Cheng, Bin Xu, Xiaotao Gu, Yuxiao Dong, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">ICLR 2025</span><a href="https://arxiv.org/abs/2408.06072">Paper</a><a href="https://github.com/zai-org/CogVideo">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-9">BibTeX</button></div>
+              <div class="bib" id="bib-9" hidden><pre>@inproceedings{yang2025cogvideox,
+  title     = {CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer},
+  author    = {Yang, Zhuoyi and Teng, Jiayan and Zheng, Wendi and Ding, Ming and Huang, Shiyu and Xu, Jiazheng and Yang, Yuanming and Hong, Wenyi and Zhang, Xiaohan and Feng, Guanyu and Yin, Da and Zhang, Yuxuan and Wang, Weihan and Cheng, Yean and Xu, Bin and Gu, Xiaotao and Dong, Yuxiao and Tang, Jie},
+  booktitle = {The Thirteenth International Conference on Learning Representations (ICLR)},
+  year      = {2025}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub">
+              <a class="pub__title" href="https://arxiv.org/abs/2402.04236">CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning</a>
+              <p class="pub__authors">Ji Qi, Ming Ding, <strong>Weihan Wang</strong>, Yushi Bai, Qingsong Lv, Wenyi Hong, Bin Xu, Lei Hou, Juanzi Li, Yuxiao Dong, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">ICLR 2025</span><a href="https://arxiv.org/abs/2402.04236">Paper</a><a href="https://github.com/THUDM/CogCoM">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-10">BibTeX</button></div>
+              <div class="bib" id="bib-10" hidden><pre>@inproceedings{qi2025cogcom,
+  title     = {CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning},
+  author    = {Qi, Ji and Ding, Ming and Wang, Weihan and Bai, Yushi and Lv, Qingsong and Hong, Wenyi and Xu, Bin and Hou, Lei and Li, Juanzi and Dong, Yuxiao and Tang, Jie},
+  booktitle = {The Thirteenth International Conference on Learning Representations (ICLR)},
+  year      = {2025}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- ===== 2024 ===== -->
+        <div class="year">
+          <h3>2024</h3>
+          <ol class="pub-list">
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/dc06d4d2792265fb5454a6092bfd5c6a-Abstract-Conference.html">CogVLM: Visual Expert for Pretrained Language Models</a>
+              <p class="pub__desc">Open-source VLM approaching GPT-4V, built on the visual expert architecture.</p>
+              <p class="pub__authors"><strong>Weihan Wang</strong>*, Qingsong Lv*, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, Jiazheng Xu, Keqin Chen, Bin Xu, Juanzi Li, Yuxiao Dong, Ming Ding, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">NeurIPS 2024</span><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/dc06d4d2792265fb5454a6092bfd5c6a-Abstract-Conference.html">Paper</a><a href="https://github.com/zai-org/CogVLM">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-11">BibTeX</button></div>
+              <div class="bib" id="bib-11" hidden><pre>@inproceedings{wang2024cogvlm,
+  title     = {CogVLM: Visual Expert for Pretrained Language Models},
+  author    = {Wang, Weihan and Lv, Qingsong and Yu, Wenmeng and Hong, Wenyi and Qi, Ji and Wang, Yan and Ji, Junhui and Yang, Zhuoyi and Zhao, Lei and Song, Xixuan and Xu, Jiazheng and Chen, Keqin and Xu, Bin and Li, Juanzi and Dong, Yuxiao and Ding, Ming and Tang, Jie},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  pages     = {121475--121499},
+  year      = {2024}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub" data-selected>
+              <a class="pub__title" href="https://openaccess.thecvf.com/content/CVPR2024/html/Hong_CogAgent_A_Visual_Language_Model_for_GUI_Agents_CVPR_2024_paper.html">CogAgent: A Visual Language Model for GUI Agents</a>
+              <p class="pub__desc">The first VLM for GUI agents, operating computers and phones from screenshots.</p>
+              <p class="pub__authors">Wenyi Hong, <strong>Weihan Wang</strong>, Qingsong Lv, Jiazheng Xu, Wenmeng Yu, Junhui Ji, Yan Wang, Zihan Wang, Yuxiao Dong, Ming Ding, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">CVPR 2024</span><span class="badge">Highlight</span><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Hong_CogAgent_A_Visual_Language_Model_for_GUI_Agents_CVPR_2024_paper.html">Paper</a><a href="https://github.com/THUDM/CogAgent">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-12">BibTeX</button></div>
+              <div class="bib" id="bib-12" hidden><pre>@inproceedings{hong2024cogagent,
+  title     = {CogAgent: A Visual Language Model for GUI Agents},
+  author    = {Hong, Wenyi and Wang, Weihan and Lv, Qingsong and Xu, Jiazheng and Yu, Wenmeng and Ji, Junhui and Wang, Yan and Wang, Zihan and Dong, Yuxiao and Ding, Ming and Tang, Jie},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {14281--14290},
+  year      = {2024}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub">
+              <a class="pub__title" href="https://arxiv.org/abs/2408.16500">CogVLM2: Visual Language Models for Image and Video Understanding</a>
+              <p class="pub__authors">Wenyi Hong, <strong>Weihan Wang</strong>, Ming Ding, Wenmeng Yu, Qingsong Lv, Yan Wang, Yean Cheng, Shiyu Huang, Junhui Ji, …, Yuxiao Dong, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">arXiv 2024</span><a href="https://arxiv.org/abs/2408.16500">Paper</a><a href="https://github.com/THUDM/CogVLM2">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-13">BibTeX</button></div>
+              <div class="bib" id="bib-13" hidden><pre>@article{hong2024cogvlm2,
+  title   = {CogVLM2: Visual Language Models for Image and Video Understanding},
+  author  = {Hong, Wenyi and Wang, Weihan and Ding, Ming and Yu, Wenmeng and Lv, Qingsong and Wang, Yan and Cheng, Yean and Huang, Shiyu and Ji, Junhui and Xue, Zhao and Zhao, Lei and Yang, Zhuoyi and Gu, Xiaotao and Zhang, Xiaohan and Feng, Guanyu and Yin, Da and Wang, Zihan and Qi, Ji and Song, Xixuan and Zhang, Peng and Liu, Debing and Xu, Bin and Li, Juanzi and Dong, Yuxiao and Tang, Jie},
+  journal = {arXiv preprint arXiv:2408.16500},
+  year    = {2024}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+
+            <li class="pub">
+              <a class="pub__title" href="https://arxiv.org/abs/2403.05121">CogView3: Finer and Faster Text-to-Image Generation via Relay Diffusion</a>
+              <p class="pub__authors">Wendi Zheng*, Jiayan Teng*, Zhuoyi Yang, <strong>Weihan Wang</strong>, Jidong Chen, Xiaotao Gu, Yuxiao Dong, Ming Ding, Jie Tang</p>
+              <div class="pub__meta"><span class="pub__venue">ECCV 2024</span><a href="https://arxiv.org/abs/2403.05121">Paper</a><a href="https://github.com/THUDM/CogView3">Code</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-14">BibTeX</button></div>
+              <div class="bib" id="bib-14" hidden><pre>@inproceedings{zheng2024cogview3,
+  title     = {CogView3: Finer and Faster Text-to-Image Generation via Relay Diffusion},
+  author    = {Zheng, Wendi and Teng, Jiayan and Yang, Zhuoyi and Wang, Weihan and Chen, Jidong and Gu, Xiaotao and Dong, Yuxiao and Ding, Ming and Tang, Jie},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  pages     = {1--22},
+  year      = {2024}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- ===== 2023 ===== -->
+        <div class="year">
+          <h3>2023</h3>
+          <ol class="pub-list">
+            <li class="pub">
+              <a class="pub__title" href="https://openaccess.thecvf.com/content/ICCV2023/html/Wang_ViLTA_Enhancing_Vision-Language_Pre-training_through_Textual_Augmentation_ICCV_2023_paper.html">ViLTA: Enhancing Vision-Language Pre-training through Textual Augmentation</a>
+              <p class="pub__authors"><strong>Weihan Wang</strong>, Zhen Yang, Bin Xu, Juanzi Li, Yankui Sun</p>
+              <div class="pub__meta"><span class="pub__venue">ICCV 2023</span><a href="https://openaccess.thecvf.com/content/ICCV2023/html/Wang_ViLTA_Enhancing_Vision-Language_Pre-training_through_Textual_Augmentation_ICCV_2023_paper.html">Paper</a><button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-15">BibTeX</button></div>
+              <div class="bib" id="bib-15" hidden><pre>@inproceedings{wang2023vilta,
+  title     = {ViLTA: Enhancing Vision-Language Pre-training through Textual Augmentation},
+  author    = {Wang, Weihan and Yang, Zhen and Xu, Bin and Li, Juanzi and Sun, Yankui},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages     = {3158--3169},
+  year      = {2023}
+}</pre><button class="copy" type="button">Copy</button></div>
+            </li>
+          </ol>
+        </div></div>
+      <p class="author-note">* Equal contribution.</p>
+    </div>
+  </section>
+</main>
+<dialog class="photo-lightbox" id="photo-lightbox" aria-label="Enlarged photo of Weihan Wang">
+  <button class="photo-lightbox__close" type="button" aria-label="Close enlarged photo" autofocus><i data-lucide="x" aria-hidden="true"></i></button>
+  <img class="photo-lightbox__image" src="assets/portrait.jpg" loading="lazy" alt="Weihan Wang beneath tall palm trees, with blue sky, a beach and a lawn in view." width="1124" height="2000">
+</dialog>
+<footer class="footer wrap">
+  <a href="#top">Back to top <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+</footer>
+</body>
+</html>
